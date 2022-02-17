@@ -30,10 +30,10 @@ const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
 
 const reviewsRoutes = require("./routes/reviews");
-app.use("/reviews", reviewsRoutes);
+app.use("/", reviewsRoutes);
 
 const roomsRoutes = require("./routes/rooms");
-app.use("/rooms", roomsRoutes);
+app.use("/", roomsRoutes);
 
 const userRoutes = require("./routes/users");
 app.use("/users", userRoutes);
